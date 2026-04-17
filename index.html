@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile Card</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <article class="profile-card" data-testid="test-profile-card">
+    <figure class="avatar-section">
+      <img
+        src="./assets/images/ujiro_pic.JPG"
+        alt="Portrait photo of the user"
+        data-testid="test-user-avatar"
+      />
+      <figcaption>Frontend Wizards Candidate</figcaption>
+    </figure>
+
+    <div class="profile-content">
+      <header>
+        <h2 data-testid="test-user-name">Ujiro Eruteya</h2>
+        <p data-testid="test-user-bio">
+          I'm a passionate frontend developer who enjoys bringing creative ideas to life through code, 
+          focused on building accessible, responsive, and testable web interfaces with clean semantic HTML, modern CSS, and JavaScript. 
+          I'm currently studying web design and constantly learning new technologies to improve my skills.
+         Aside from coding, I love exploring new cultures, writing short stories, and listening to music that inspires me.
+        </p>
+        <p aria-live="polite">
+          Current Time: <span data-testid="test-user-time" id="user-time"></span>
+        </p>
+      </header>
+
+      <nav aria-label="Social links" data-testid="test-user-social-links">
+        <ul>
+          <li>
+            <a
+              href="https://facebook.com/ujiro.eruteya"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-testid="test-user-social-facebook"
+            >Facebook</a>
+          </li>
+          <li>
+            <a
+              href="https://x.com/ujiroexotic"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-testid="test-user-social-x"
+            >X</a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/ujiroexotic"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-testid="test-user-social-github"
+            >GitHub</a>
+          </li>
+          <li>
+            <a
+              href="https://linkedin.com/in/ujiro-eruteya"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-testid="test-user-social-linkedin"
+            >LinkedIn</a>
+          </li>
+          <li>
+            <a
+              href="https://ujiroeruteya.netlify.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-testid="test-user-social-portfolio"
+            >Portfolio</a>
+          </li>
+        </ul>
+      </nav>
+
+      <section>
+        <h3>Hobbies</h3>
+        <ul data-testid="test-user-hobbies">
+        <li>Coding and Web Development</li>
+        <li>Traveling</li>
+        <li>Playing Chess</li>
+        <li>Playing Football</li>
+        <li>Reading Books</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>Dislikes</h3>
+        <ul data-testid="test-user-dislikes">
+          <li>Poor accessibility</li>
+          <li>Messy layouts</li>
+          <li>Unresponsive designs</li>
+        </ul>
+      </section>
+    </div>
+  </article>
+
+  <script src="script.js"></script>
+</body>
+</html>
